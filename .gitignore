@@ -1,0 +1,55 @@
+echo "# voice" >> README.md
+``
+# Android Studio & IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Build output
+/build/
+*/build/
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+gradle-wrapper.properties
+gradle-wrapper/
+
+# Local configuration
+local.properties
+
+# Log files
+*.log
+
+# Android specific
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.jar
+*.keystore
+
+# Kotlin specific
+*.kotlin_module
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Crashlytics
+crashlytics.properties
+fabric.properties
+
+# NDK
+obj/
+.externalNativeBuild/
+
+# Jetpack Compose
+compose-compiler/
+
+# Misc
+*.swp
+*.swo
