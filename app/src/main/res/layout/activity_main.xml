@@ -30,4 +30,16 @@
         android:text="Stop"
         android:enabled="false" />
 
+    <Button
+        android:id="@+id/nativeInitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native Init" />
+
+    <Button
+        android:id="@+id/nativeStartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native Start/Stop" />
+
 </LinearLayout>

@@ -94,3 +94,16 @@ If you'd like, I can:
 - Add a headphone-only detection hint (prompt to use headphones when starting) and automatically switch playback attributes for better routing.
 - Add a recording button so you can save a sample file of the processed audio and send it to your friend.
 - Start a plan for a deeper system-level approach (Oboe + SoundTouch + instructions for routing), but note that making other apps receive modified mic input requires OS-level support and often can't be done purely in an app on unmodified Android.
+
+Building the native (Oboe) parts
+
+- This project now uses the Android NDK and Oboe (fetched at configure time). Open the project in Android Studio with the NDK installed (via SDK Manager) and a compatible `ndkVersion` installed (see `app/build.gradle`).
+- When Gradle configures CMake it will fetch Oboe from GitHub. If you are on a restricted network or prefer an offline build, I can vendor the Oboe sources into the repo instead.
+- Run:
+
+```
+cd 'C:\Users\shiva\Desktop\vioce\VoiceChangerApp'
+.\gradlew clean assembleDebug --info
+```
+
+- If CMake fails to fetch Oboe, copy the first CMake error block here and I'll provide a vendored fallback.
